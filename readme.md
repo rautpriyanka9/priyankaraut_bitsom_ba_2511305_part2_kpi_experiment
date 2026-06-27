@@ -380,91 +380,62 @@ All subsequent analyses, KPI calculations, and business recommendations should b
 
 # Segment Analysis
 
-
+To better understand how the new onboarding campaign performed across different user segments, paid conversion rates were analyzed by Region, Device Type, and Traffic Source.
 
 ## 1. Paid Conversion Rate by Region
 
-
-
 | Region | Control | Treatment |
-
-| ------ | ------: | --------: |
-
-| East   |   2.53% |     6.40% |
-
-| North  |   3.45% |     8.89% |
-
-| South  |   3.26% |     7.61% |
-
-| West   |   3.38% |     5.03% |
-
-
+|---------|---------:|----------:|
+| East | 2.53% | 6.40% |
+| North | 3.45% | 8.89% |
+| South | 3.26% | 7.61% |
+| West | 3.38% | 5.03% |
 
 ### Observation
 
-
-
-The Treatment group achieved higher conversion rates across every region, with the largest improvement observed in the North region.
-
-
+The Treatment group achieved higher paid conversion rates across all regions. The largest improvement was observed in the **North region**, where conversion increased from **3.45%** to **8.89%**. This suggests that the new onboarding experience was consistently effective regardless of geographic segment.
 
 ---
-
-
 
 ## 2. Paid Conversion Rate by Device Type
 
-
-
 | Device Type | Control | Treatment |
-
-| ----------- | ------: | --------: |
-
-| Desktop     |   4.50% |     6.54% |
-
-| Mobile      |   2.57% |     7.34% |
-
-| Tablet      |   1.79% |     7.14% |
-
-
+|-------------|---------:|----------:|
+| Desktop | 4.50% | 6.54% |
+| Mobile | 2.57% | 7.34% |
+| Tablet | 1.79% | 7.14% |
 
 ### Observation
 
-
-
-The Treatment experience delivered stronger conversion performance across all device types, particularly on Mobile and Tablet devices.
-
-
+The Treatment experience delivered stronger conversion performance across all device types. The most significant gains were observed on **Mobile** and **Tablet** devices, indicating that the revised onboarding flow may be particularly effective for users accessing the product through mobile platforms.
 
 ---
 
-
-
 ## 3. Paid Conversion Rate by Traffic Source
 
-
-
 | Traffic Source | Control | Treatment |
-
-| -------------- | ------: | --------: |
-
-| Email          |   2.70% |     7.14% |
-
-| Organic        |   2.03% |     6.22% |
-
-| Paid Search    |   1.28% |     6.25% |
-
-| Referral       |   2.47% |    10.99% |
-
-| Social         |   7.69% |     6.02% |
-
-
+|----------------|---------:|----------:|
+| Email | 2.70% | 7.14% |
+| Organic | 2.03% | 6.22% |
+| Paid Search | 1.28% | 6.25% |
+| Referral | 2.47% | 10.99% |
+| Social | 7.69% | 6.02% |
 
 ### Observation
 
+The Treatment group outperformed the Control group across most traffic sources. **Referral traffic** showed the strongest uplift, increasing from **2.47%** to **10.99%**. Improvements were also observed for Email, Organic, and Paid Search traffic.
 
+The only exception was **Social traffic**, where the Control group achieved a slightly higher conversion rate than the Treatment group. This suggests that users arriving through social channels may respond differently to the onboarding experience and could benefit from further investigation.
 
-The Treatment group outperformed the Control group across most traffic sources. Referral traffic showed the strongest uplift. Social traffic was the only source where the Control group slightly outperformed the Treatment group.
+---
 
+## Segment Analysis Summary
 
+The Treatment experience demonstrated consistent improvements in paid conversion rates across most user segments. The strongest gains were observed among:
 
+- Users from the North region
+- Mobile users
+- Tablet users
+- Referral traffic users
+
+These results indicate that the new onboarding campaign is broadly effective and not limited to a single customer segment. However, the decline in conversion among Social traffic users should be monitored before a full rollout is recommended.
