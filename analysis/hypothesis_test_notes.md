@@ -1,3 +1,5 @@
+# Task 6: Frame Hypotheses
+
 # Hypothesis Testing Plan
 
 ## Business Context
@@ -130,3 +132,102 @@ The final business recommendation will consider both statistical significance an
 This hypothesis directly supports the business decision of whether the new onboarding campaign should be launched to all users.
 
 If the Treatment group significantly increases User Activation Rate without creating unacceptable negative effects on guardrail metrics, the company should proceed with a full rollout. Otherwise, the onboarding experience should be revised or tested further before deployment.
+
+# Task 7: Perform Hypothesis or A/B Test Analysis
+
+# Hypothesis Test Results
+
+## Test Performed
+
+Two-Proportion Z-Test
+
+### Metric Tested
+
+User Activation Rate (Onboarding Completion Rate)
+
+The objective was to determine whether the new onboarding campaign increased the proportion of users completing onboarding compared to the existing experience.
+
+---
+
+## Test Inputs
+
+| Metric | Control | Treatment |
+|----------|----------:|----------:|
+| Users | 690 | 710 |
+| Activated Users | 108 | 150 |
+| Activation Rate | 15.65% | 21.13% |
+
+---
+
+## Hypotheses
+
+### Null Hypothesis (H₀)
+
+The new onboarding campaign does not improve User Activation Rate.
+
+```text
+H₀: Treatment Activation Rate ≤ Control Activation Rate
+```
+
+### Alternative Hypothesis (H₁)
+
+The new onboarding campaign improves User Activation Rate.
+
+```text
+H₁: Treatment Activation Rate > Control Activation Rate
+```
+
+---
+
+## Significance Level
+
+```text
+α = 0.05
+```
+
+---
+
+## Test Output
+
+| Statistic | Value |
+|------------|--------:|
+| Pooled Proportion | 0.1843 |
+| Standard Error | 0.0207 |
+| Z Score | 2.65 |
+| P Value | 0.0040 |
+
+---
+
+## Decision Rule
+
+Reject the null hypothesis if:
+
+```text
+p-value < 0.05
+```
+
+Result:
+
+```text
+0.0040 < 0.05
+```
+
+Decision:
+
+**Reject H₀**
+
+---
+
+## Business Interpretation
+
+The Treatment group achieved a significantly higher User Activation Rate than the Control group.
+
+- Control Activation Rate: 15.65%
+- Treatment Activation Rate: 21.13%
+- Improvement: +5.48 percentage points
+
+The probability that this improvement occurred by random chance is very low (p-value = 0.004).
+
+This provides strong statistical evidence that the new onboarding campaign improves user activation and supports consideration of a broader rollout.
+
+However, guardrail metrics such as support ticket rate and refund rate should also be evaluated before making a final business recommendation.

@@ -1,4 +1,5 @@
-# Task 1
+# Task 1: Understand the Business Problem
+
 # Business Problem Statement
 The company has introduced a new onboarding and activation campaign for its subscription-based digital product. Users were randomly assigned to either:
 
@@ -439,3 +440,179 @@ The Treatment experience demonstrated consistent improvements in paid conversion
 - Referral traffic users
 
 These results indicate that the new onboarding campaign is broadly effective and not limited to a single customer segment. However, the decline in conversion among Social traffic users should be monitored before a full rollout is recommended.
+
+# Task 8: Evaluate Guardrail Metrics
+
+# Guardrail Metric Evaluation
+
+## Purpose
+
+While the Treatment group demonstrated strong improvements in activation and paid conversion rates, a rollout decision should not be based solely on primary success metrics. Guardrail metrics were evaluated to identify potential risks or unintended negative consequences of the new onboarding experience.
+
+---
+
+## 1. Support Ticket Rate
+
+| Metric | Control | Treatment | Difference |
+|----------|----------:|----------:|----------:|
+| Support Ticket Rate | 14.78% | 24.79% | +10.01 pp |
+
+### Assessment
+
+The Treatment group generated a substantially higher support ticket rate than the Control group.
+
+### Risk
+
+- Increased support demand may increase operational costs.
+- Users may experience confusion or friction during onboarding.
+- Customer success teams may require additional resources to handle increased support volume.
+
+### Conclusion
+
+⚠️ **High Risk**
+
+This is the most significant guardrail concern identified in the experiment and should be investigated before a full rollout.
+
+---
+
+## 2. Refund Rate
+
+| Metric | Control | Treatment | Difference |
+|----------|----------:|----------:|----------:|
+| Refund Rate | 0.00% | 0.42% | +0.42 pp |
+
+### Assessment
+
+Refund requests occurred only in the Treatment group.
+
+### Risk
+
+- Some users may be converting without fully understanding the product or pricing.
+- The onboarding experience may be encouraging lower-quality conversions.
+
+### Conclusion
+
+⚠️ **Moderate Risk**
+
+Although the refund rate remains low, the increase should be monitored as the user base scales.
+
+---
+
+## 3. Average Days to Convert
+
+| Metric | Control | Treatment | Difference |
+|----------|----------:|----------:|----------:|
+| Average Days to Convert | 8.86 | 6.40 | -2.46 Days |
+
+### Assessment
+
+Users in the Treatment group converted faster than users in the Control group.
+
+### Risk
+
+No significant risk identified.
+
+Faster conversion suggests that users are reaching value more quickly and progressing through the customer journey more efficiently.
+
+### Conclusion
+
+✅ **Positive Signal**
+
+This metric supports the effectiveness of the new onboarding campaign.
+
+---
+
+## 4. Average Engagement Score
+
+| Metric | Control | Treatment | Difference |
+|----------|----------:|----------:|----------:|
+| Average Engagement Score | 57.03 | 62.94 | +5.91 |
+
+### Assessment
+
+Engagement improved significantly in the Treatment group.
+
+### Risk
+
+No major risk identified.
+
+Higher engagement suggests that users are interacting more actively with the product after onboarding.
+
+### Conclusion
+
+✅ **Positive Signal**
+
+This result indicates stronger user engagement and supports rollout consideration.
+
+---
+
+## 5. Revenue Quality
+
+| Metric | Control | Treatment |
+|----------|----------:|----------:|
+| Paid Conversion Rate | 3.19% | 7.04% |
+| Revenue Per User | 51.97 | 54.25 |
+| Revenue Per Converted User | 1,630.10 | 770.41 |
+
+### Assessment
+
+While the Treatment group generated more conversions and slightly higher revenue per user, revenue per converted user decreased substantially.
+
+### Risk
+
+- New customers may be purchasing lower-value plans.
+- Conversion quality may be lower than in the Control group.
+- Increased volume may not translate proportionally into higher customer value.
+
+### Conclusion
+
+⚠️ **Moderate Risk**
+
+Additional analysis is recommended to determine whether the increase in conversions results in sustainable long-term revenue growth.
+
+---
+
+## 6. Segment-Level Performance
+
+### Findings
+
+The Treatment group improved conversion rates across nearly all segments:
+
+- All regions showed improvement.
+- All device types showed improvement.
+- Referral traffic experienced the strongest uplift.
+
+However:
+
+- Social traffic conversion declined slightly in the Treatment group.
+
+### Risk
+
+The onboarding experience may not perform equally well across all acquisition channels.
+
+### Conclusion
+
+⚠️ **Low Risk**
+
+The decline is limited to one segment but should be monitored after rollout.
+
+---
+
+# Overall Guardrail Assessment
+
+| Guardrail Metric | Risk Level |
+|------------------|------------|
+| Support Ticket Rate | High |
+| Refund Rate | Moderate |
+| Revenue Quality | Moderate |
+| Segment-Level Decline | Low |
+| Days to Convert | Positive |
+| Engagement Score | Positive |
+
+## Summary
+
+The Treatment group achieved significant improvements in activation, engagement, conversion rate, and conversion speed. However, the increase in support ticket volume represents a meaningful business risk and should be investigated before a full rollout.
+
+The refund rate and revenue quality metrics also warrant continued monitoring, although they do not currently outweigh the positive impact observed in the primary success metrics.
+
+Overall, the guardrail metrics suggest that the Treatment experience is promising but may require targeted refinements to reduce support burden and improve conversion quality before full deployment.
