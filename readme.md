@@ -377,3 +377,94 @@ The dataset passed all major data quality checks. After removing duplicate user 
   - Treatment: **710**
 
 All subsequent analyses, KPI calculations, and business recommendations should be based on the deduplicated dataset.
+
+# Segment Analysis
+
+
+
+## 1. Paid Conversion Rate by Region
+
+
+
+| Region | Control | Treatment |
+
+| ------ | ------: | --------: |
+
+| East   |   2.53% |     6.40% |
+
+| North  |   3.45% |     8.89% |
+
+| South  |   3.26% |     7.61% |
+
+| West   |   3.38% |     5.03% |
+
+
+
+### Observation
+
+
+
+The Treatment group achieved higher conversion rates across every region, with the largest improvement observed in the North region.
+
+
+
+---
+
+
+
+## 2. Paid Conversion Rate by Device Type
+
+
+
+| Device Type | Control | Treatment |
+
+| ----------- | ------: | --------: |
+
+| Desktop     |   4.50% |     6.54% |
+
+| Mobile      |   2.57% |     7.34% |
+
+| Tablet      |   1.79% |     7.14% |
+
+
+
+### Observation
+
+
+
+The Treatment experience delivered stronger conversion performance across all device types, particularly on Mobile and Tablet devices.
+
+
+
+---
+
+
+
+## 3. Paid Conversion Rate by Traffic Source
+
+
+
+| Traffic Source | Control | Treatment |
+
+| -------------- | ------: | --------: |
+
+| Email          |   2.70% |     7.14% |
+
+| Organic        |   2.03% |     6.22% |
+
+| Paid Search    |   1.28% |     6.25% |
+
+| Referral       |   2.47% |    10.99% |
+
+| Social         |   7.69% |     6.02% |
+
+
+
+### Observation
+
+
+
+The Treatment group outperformed the Control group across most traffic sources. Referral traffic showed the strongest uplift. Social traffic was the only source where the Control group slightly outperformed the Treatment group.
+
+
+
