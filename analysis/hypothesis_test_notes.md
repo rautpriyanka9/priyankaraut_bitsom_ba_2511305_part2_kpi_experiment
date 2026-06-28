@@ -90,7 +90,9 @@ If:
 ```text
 p-value < 0.05
 ```
+
 ![hypothesis test output preview](screenshots\hypothesis_test_output.PNG)
+
 
 **Conclusion:**
 
