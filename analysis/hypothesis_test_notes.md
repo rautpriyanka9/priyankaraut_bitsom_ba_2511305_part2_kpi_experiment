@@ -90,7 +90,7 @@ If:
 ```text
 p-value < 0.05
 ```
-![KIP Tree Layout preview](screenshots/hypothesis_test_output.PNG)
+![hypothesis test output preview](screenshots/hypothesis_test_output.PNG)
 
 **Conclusion:**
 
