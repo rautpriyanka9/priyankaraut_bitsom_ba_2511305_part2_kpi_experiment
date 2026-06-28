@@ -90,7 +90,7 @@ If:
 ```text
 p-value < 0.05
 ```
-![hypothesis test output preview](C:\Business analytics\capstone project\priyankaraut_bitsom_ba_2511305_part2_kpi_experiment\screenshots\hypothesis_test_output.PNG)
+![hypothesis test output preview](screenshots\hypothesis_test_output.PNG)
 
 **Conclusion:**
 
